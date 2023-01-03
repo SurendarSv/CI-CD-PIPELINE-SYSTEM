@@ -1,5 +1,5 @@
 # CI-CD PIPELINE SYSTEM
-  Simple Devops Project
+Simple Devops Project
     -----
     • Git - local version control system.
     -----
