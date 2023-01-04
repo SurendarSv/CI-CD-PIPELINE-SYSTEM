@@ -15,5 +15,5 @@ Simple Devops Project
    -----
    • Kubernetes - As Container Management Tool.
    -----
- <img src="https://i.ytimg.com/vi/i8klL6FujLc/maxresdefault.jpg" height="800" width="1100" >
+ <img src="https://i.ytimg.com/vi/i8klL6FujLc/maxresdefault.jpg" height="500" width="1100" >
   
