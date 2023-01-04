@@ -1,0 +1,85 @@
+Setup Jenkins Server
+  • Setup a Linux EC2 instance
+  • Install Java
+  • Install Jenkins
+  • Start Jenkins
+  • Access Web UI on port 8080
+  
+  
+  Installation of java:(RedHat Packages)
+      sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+      sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+      yum install fontconfig java-11-openjdk
+      yum install jenkins
+      Jenkins Start
+      Access Web UI on port 8080
+***********************************************************************************************************************************
+  
+Integrate Git with Jenkins
+
+  • Install Git on Jenkins Instances (git --version )
+  • Install GitHub plug in on Jenkins GUI
+  • Configure Git on Jenkins GUI
+      Run Jenkins Job to pull code from GitHub
+      ~]# cd /var/lib/jenkins/workspace/PullGitHubCode
+   
+ ************************************************************************************************************************************
+ 
+Integrate Maven with Jenkins
+
+    • Setup Maven on Jenkins Server
+              [root@Jenkins_Server opt]# wget https://dlcdn.apache.org/maven/maven-
+              3/3.8.5/binaries/apache-maven-3.8.5-bin.tar.gz
+              [root@Jenkins_Server opt]# ll
+              [root@Jenkins_Server opt]# mv apache-maven-3.8.5 maven
+              [root@Jenkins_Server opt]# cd maven
+              [root@Jenkins_Server ~]# cd /opt
+              [root@Jenkins_Server opt]# ll
+              [root@Jenkins_Server maven]# cd bin
+              [root@Jenkins_Server bin]# ll
+              [root@Jenkins_Server bin]# ./mvn -v
+              [root@Jenkins_Server bin]# cd ..
+              [root@Jenkins_Server maven]# cd bin
+              [root@Jenkins_Server bin]# mvn -v
+              [root@Jenkins_Server bin]# cd ~
+              [root@Jenkins_Server ~]# ll -a
+              [root@Jenkins_Server ~]# vi .bash_profile
+              [root@Jenkins_Server ~]# echo $Path
+              [root@Jenkins_Server ~]# source .bash_profile
+              [root@Jenkins_Server ~]# echo $Path
+              [root@Jenkins_Server ~]# vi .bash_profile
+              [root@Jenkins_Server ~]# echo $Path
+              [root@Jenkins_Server ~]# logout
+              [root@Jenkins_Server /]# cd ~
+              [root@Jenkins_Server ~]# echo $path
+              [root@Jenkins_Server ~]# echo $PATH
+              /sbin:/bin:/usr/sbin:/usr/bin
+              [root@Jenkins_Server ~]# vi .bash_profile
+              [root@Jenkins_Server ~]# echo $PATH
+              /sbin:/bin:/usr/sbin:/usr/bin
+              [root@Jenkins_Server ~]# source .bash_profile
+              [root@Jenkins_Server ~]# echo $PATH
+              /sbin:/bin:/usr/sbin:/usr/bin:/root/bin:/usr/lib/jvm/java-11-openjdk-
+              11.0.13.0.8-1.amzn2.0.3.x86_64:/opt/maven:/opt/maven/bin
+              [root@Jenkins_Server ~]# mvn -v
+
+
+    • Setup Environment Variables
+    ▪ JAVA_HOME, M2, M2_HOME
+    • Install Maven Plugin
+    • Configure Maven and Java
+    
+    Build a Java project using Jenkins and generate artifacts.
+    ************************************************************************************************************************************
+
+
+       
+  
+  
+  
+      
+  
+  
+      
+  
+ 
